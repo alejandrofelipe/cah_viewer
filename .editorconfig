@@ -1,0 +1,16 @@
+root = true
+
+[*]
+indent_style = tab
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[{*.otf,*.eot,*.svg,*.ttf,*.woff,*.woff2}]
+insert_final_newline = false
+
+[{package.json,*.yml,*.html}]
+indent_style = tab
+indent_size = 2
