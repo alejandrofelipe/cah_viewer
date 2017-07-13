@@ -7,10 +7,28 @@
 	}
 
 	.c-cards {
-		height: 563px;
+		height: 575px;
 	}
 
 	.column h2 {
 		padding: 6px;
+	}
+
+	.ui.grid + .grid {
+		margin-top: 0;
+	}
+
+	.ui.grid {
+		&.top-content {
+
+		}
+		&.main-content {
+			.four.wide {
+				padding-right: 0;
+				.ui.vertical.menu {
+					width: 100%;
+				}
+			}
+		}
 	}
 }

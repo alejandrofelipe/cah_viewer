@@ -1,0 +1,14 @@
+{
+	"source": {
+		"include": [
+			"README.md",
+			"package.json",
+			"src/js"
+		],
+		"includePattern": ".+\\.js(doc|x)?$"
+	},
+	"opts": {
+		"template": "./node_modules/minami"
+	},
+	"recurseDepth": 10
+}

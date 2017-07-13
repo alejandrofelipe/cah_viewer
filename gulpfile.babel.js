@@ -84,6 +84,11 @@ gulp.task('clean', () => gulp
 	.pipe($.clean())
 );
 
+gulp.task('jsdoc', () => gulp
+	.src(['README.md', './src/js/**/*.jsx'], {read: false})
+	.pipe($.jsdoc3(require('./.jsdoc.json')))
+);
+
 gulp.task('watch', cb => {
 	run_S(
 		'clean',
